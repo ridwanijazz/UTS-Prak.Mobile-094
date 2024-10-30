@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".ConfirmationActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmation"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Card untuk Menampung Konfirmasi Order -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Confirmation Nama Makanan -->
+            <TextView
+                android:id="@+id/foodname_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Name: Batagor"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Confirmation Jumlah Porsi -->
+            <TextView
+                android:id="@+id/serving_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Servings: 2 pax"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Confirmation Nama Pengorder -->
+            <TextView
+                android:id="@+id/ordername_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ordering Name: Usep"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Input Catatan Tambahan -->
+            <TextView
+                android:id="@+id/note_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional Notes: Tidak Pedas"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Pesan Konfirmasi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for your order. Please wait for delivery by the nearest courier."
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tombol Kembali ke Menu -->
+    <Button
+        android:id="@+id/backtoMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Back to Menu"
+        android:textColor="@android:color/white"
+        android:padding="8dp"/>
+</LinearLayout>
